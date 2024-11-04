@@ -1,0 +1,93 @@
+body {
+    background-color: #497d83;
+    padding: 2% 10%;
+}
+
+.hero{
+    background-image: url(../images/bbcr.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero div{
+    background-image: url(../images/bb.png);
+    background-position: center;
+    background-size: cover;
+    height: 231px;
+    width: 266px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    margin: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bote{
+    background-image: url(../images/bote.png);
+    width: 150px;
+    height: 171px;
+    background-size: cover;
+}
+
+.tx{
+    border-radius: 10%;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500PX;
+    height: 300px;
+    background-color: #dce5dc;
+}
+
+.bot{
+    margin: 3%, 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bo1{
+    background-image: url(../images/e1.png);
+    width: 376.6px;
+    height: 261.8px;
+    background-size: cover;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15%;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 35px;
+    width: 250px;
+    height: 100px;
+    background-color: #005c7a;
+}
+
+.boton a{
+    text-decoration: none;
+    color: white;
+}
+
+.bo2{
+    background-image: url(../images/e2.png);
+    width: 376.6px;
+    height: 261.8px;
+    background-size: cover;
+}
