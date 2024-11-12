@@ -1,0 +1,41 @@
+body {
+    background-color: #497d83;
+    padding: 2% 10%;
+}
+
+.cu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cu h1 {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    color: #0ac2ff;;
+    text-transform: uppercase;
+  }
+
+.eu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.eu div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    height: 170px;
+    width: 350px;
+    border-radius:20%;
+    background-color: #dce5dc;
+}
+
+.eu div p{
+    font-size: 40px;
+    color: #7cafb6;
+}
