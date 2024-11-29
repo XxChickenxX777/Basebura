@@ -9,24 +9,23 @@
 <body>
     <main>
         <section class="ini">
-            <div>
-                <form action="admincuentas.html" method="post">
+            <div class="lol">
+                <form action="/f" method="post">
                     <label for="email">Correo electrónico : </label>
                     <input type="text" id="email" name="email" placeholder="Ingresa tu Correo" required>
             </div>
-            <div>
+            <div class="ing">
                     <label for="contraseña">Contraseña : </label>
                     <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required>
             </div>
-            <div>
+            <div class="on">
                     <button type="submit">Enviar</button>
             </div>
-                </form>
+            <div class="on">
+            
+                    <a href="{{ url_for('cuentas') }}"><p>Cancelar</p></a>
             </div>
-        </section>
-        <section>
-            <div>
-                <p>Cancelar</p>
+                </form>
             </div>
         </section>
     </main>

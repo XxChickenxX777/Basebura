@@ -7,6 +7,20 @@ a{
     text-decoration: none;
 }
 
+a p{
+    background-color: #e7f0e7;
+    color: #7cafb6; 
+    font-family: "Georgia", serif;
+    font-size: 25px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin: 0px;
+}
+
 .i{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -16,8 +30,58 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 5%;
 }
 
 .ini div{
     padding: 1%;
+}
+
+.lol{
+    margin: 2%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 625px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #e7f0e7;
+    font-size: 35px;
+}
+
+.ing{
+    margin: 2%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #e7f0e7;
+    font-size: 35px;
+}
+
+input{
+    font-size: 25px;
+    background-color: #e7f0e7;
+    border: none;
+}
+
+button{
+    background-color: #e7f0e7;
+    color: #7cafb6; 
+    font-family: "Georgia", serif;
+    font-size: 25px;
+    padding: 10px 40px;
+    border: none;
+    width: 170px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.on{
+    margin: 1%;
 }
