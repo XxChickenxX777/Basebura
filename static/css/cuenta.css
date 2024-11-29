@@ -1,6 +1,20 @@
+@font-face{
+    font-family: 'Emerald';
+    src: url('Lost Emerald.otf') format(opentype);
+}
+
+@font-face{
+    font-family: 'Eastwood';
+    src: url('Eastwood.otf') format(opentype);
+}
+
 body {
     background-color: #497d83;
     padding: 2% 10%;
+}
+
+a{
+    text-decoration: none;
 }
 
 .cu{
@@ -10,7 +24,8 @@ body {
 }
 
 .cu h1 {
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font-family: 'Eastwood', sans-serif;
+    text-decoration: none;
     font-size: 35px;
     color: #0ac2ff;;
     text-transform: uppercase;
@@ -38,4 +53,5 @@ body {
 .eu div p{
     font-size: 40px;
     color: #7cafb6;
+    font-family: 'Emerald', serif;
 }

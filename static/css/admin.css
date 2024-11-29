@@ -1,0 +1,23 @@
+body {
+    background-color: #497d83;
+    padding: 2% 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.i{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ini div{
+    padding: 1%;
+}
