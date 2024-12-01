@@ -28,5 +28,23 @@ def admincuentas():
     email = request.args.get("email", "contraseña")
     return render_template("admincuentas.html", email=email)
 
+@app.route("/Crear_cuentas")
+def ccuentas():
+    return render_template("ccuentas.html")
+
+@app.route("/cc", methods=["GET", "POST"])
+def cuentano():
+    if request.method == "POST":
+        email = request.form.get("email")
+        #procesar datos de entrada
+        return redirect(url_for("cuentac", email= email))
+    return render_template("ccuentas.html")
+
+@app.route("/Cuenta_creada")
+def cuentac():
+    #obtener el parametro opcional
+    email = request.args.get("email", "contraseña")
+    return render_template("cuenta_c.html", email=email)
+
 if __name__ == "__main__":
     app.run(debug=True)

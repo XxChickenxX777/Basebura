@@ -1,0 +1,51 @@
+@font-face{
+    font-family: 'Emerald';
+    src: url('Lost Emerald.otf') format(opentype);
+}
+
+body {
+    background-color: #497d83;
+    padding: 2% 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a p{
+    background-color: #e7f0e7;
+    color: #7cafb6; 
+    font-family: "Emerald", serif;
+    font-size: 40px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin: 20  px;
+}
+
+.lol{
+    margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #e7f0e7;
+    font-size: 35px;
+}
+
+.ini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.ini div{
+    padding: 1%;
+}

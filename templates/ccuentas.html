@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ccuentas.css') }}">
+    <title>Crear Cuentas</title>
+</head>
+<body>
+    <main>
+        <section class="ini">
+            <div class="lol">
+                <form action="/cc" method="post">
+                    <label for="email">Correo electrónico : </label>
+                    <input type="text" id="email" name="email" placeholder="Ingresa tu Correo" required>
+            </div>
+            <div class="lol">
+                    <label for="contraseña">Contraseña : </label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required>
+            </div>
+            <div class="tc">
+                    <label for="Tcuenta">Elije el tipo de cuenta:</label>
+                    <label for="admin">Administrador</label>
+                    <input type="radio" name="Tcuenta" value="admin">
+                    <label for="repre">Representante</label>
+                    <input type="radio" name="Tcuenta" value="repre">
+                    <label for="traba">Trabajador</label>
+                    <input type="radio" name="Tcuenta" value="traba">
+            </div>
+            <div class="on">
+                    <button type="submit">Enviar</button>
+            </div>
+            <div class="in">
+                <a href="{{ url_for('admin') }}"><p>Regresar a la página anterior</p></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

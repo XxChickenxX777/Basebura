@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admini.css') }}">
     <title>Administrar_cuentas</title>
 </head>
 <body>
-    <h1></h1>
+    <main>
+        <section class="ini">
+            <div class="lol">
+                <a href="{{ url_for('ccuentas')}}"><p>Crear cuentas</p></a>
+            </div>
+            <div class="lol">
+                <a href=""><p>Editar cuentas</p></a>
+            </div>
+            <div class="lol">
+                <a href=""><p>Eliminar cuentas</p></a>
+            </div>
+            <div class="lol">
+                <a href="{{ url_for('cuentas') }}"><p>Cerrar sesión</p></a>
+            </div>
+            <div>
+                <a href="{{ url_for('admin') }}"><p>Regresar a la página anterior</p></a>
+            </div>
+            <div>
+
+            </div>
+        </section>
+    </main>
 </body>
 </html>
