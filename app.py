@@ -46,5 +46,9 @@ def cuentac():
     email = request.args.get("email", "contraseña")
     return render_template("cuenta_c.html", email=email)
 
+@app.route("/Editar_cuentas")
+def ecuentas():
+    return render_template("ecuentas.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
