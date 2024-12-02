@@ -48,6 +48,7 @@ a{
     width: 350px;
     border-radius:20%;
     background-color: #dce5dc;
+    cursor: pointer;
 }
 
 .eu div p{

@@ -8,7 +8,7 @@ def home():
 
 @app.route("/Tipo_de_cuenta")
 def cuentas():
-    return render_template("cuenta.html")
+    return render_template("cuentas.html")
 
 @app.route("/Administrador")
 def admin():
@@ -18,11 +18,14 @@ def admin():
 def admino():
     if request.method == "POST":
         email = request.form.get("email")
+        contraseña = request.form.get("contraseña")
+        print(email)
+        print(contraseña)
         #procesar datos de entrada
         return redirect(url_for("admincuentas", email= email))
     return render_template("admin.html")
 
-@app.route("/Administrar_cuentas")
+@app.route("/Menú_Administrador")
 def admincuentas():
     #obtener el parametro opcional
     email = request.args.get("email", "contraseña")
@@ -49,6 +52,31 @@ def cuentac():
 @app.route("/Editar_cuentas")
 def ecuentas():
     return render_template("ecuentas.html")
+
+@app.route("/Eliminar_cuentas")
+def elcuentas():
+    return render_template("elcuentas.html")
+
+@app.route("/Representante")
+def representante():
+    return render_template("representante.html")
+
+@app.route("/r", methods=["GET", "POST"])
+def repro():
+    if request.method == "POST":
+        email = request.form.get("email")
+        contraseña = request.form.get("contraseña")
+        print(email)
+        print(contraseña)
+        #procesar datos de entrada
+        return redirect(url_for("srepre", email= email))
+    return render_template("representante.html")
+
+@app.route("/Menú_Representante")
+def srepre():
+    #obtener el parametro opcional
+    email = request.args.get("email", "contraseña")
+    return render_template("srepre.html", email=email)
 
 if __name__ == "__main__":
     app.run(debug=True)

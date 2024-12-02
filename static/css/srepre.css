@@ -12,15 +12,15 @@ a{
     text-decoration: none;
 }
 
-p{
-    font-family: "Emerald", serif;
+.mar{
+    margin: 0px;
 }
 
 a p{
     background-color: #e7f0e7;
     color: #7cafb6; 
     font-family: "Emerald", serif;
-    font-size: 30px;
+    font-size: 40px;
     padding: 10px 40px;
     border: none;
     border-radius: 20px;
@@ -31,14 +31,13 @@ a p{
 }
 
 .lol{
-    margin: 2%;
+    margin: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 330px;
-    height: 40px;
+    width: 700px;
+    height: 50px;
     border-radius: 20px;
-    color: #7cafb6;
     background-color: #e7f0e7;
     font-size: 35px;
 }
@@ -53,19 +52,4 @@ a p{
 
 .ini div{
     padding: 1%;
-}
-
-.cre{
-    font-family: "Emerald", serif;
-    margin: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 655px;
-    height: 400px;
-    border-radius: 20px;
-    color: #7cafb6;
-    background-color: #e7f0e7;
-    font-size: 75px;
-    text-align: center;
 }

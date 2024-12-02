@@ -12,35 +12,18 @@ a{
     text-decoration: none;
 }
 
-p{
-    font-family: "Emerald", serif;
-}
-
 a p{
     background-color: #e7f0e7;
-    color: #7cafb6; 
+    color: #7cafb6;
     font-family: "Emerald", serif;
-    font-size: 30px;
+    font-size: 25px;
     padding: 10px 40px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     text-align: center;
     display: inline-block;
-    margin: 20  px;
-}
-
-.lol{
-    margin: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 330px;
-    height: 40px;
-    border-radius: 20px;
-    color: #7cafb6;
-    background-color: #e7f0e7;
-    font-size: 35px;
+    margin: 0px;
 }
 
 .ini{
@@ -55,17 +38,44 @@ a p{
     padding: 1%;
 }
 
-.cre{
-    font-family: "Emerald", serif;
+.lol{
     margin: 2%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 655px;
-    height: 400px;
+    height: 40px;
     border-radius: 20px;
     color: #7cafb6;
     background-color: #e7f0e7;
-    font-size: 75px;
+    font-size: 35px;
+}
+
+.lol label{
+    font-family: "Emerald", serif;
+}
+
+input{
+    font-size: 25px;
+    background-color: #e7f0e7;
+    border: none;
+}
+
+button{
+    background-color: #e7f0e7;
+    color: #7cafb6; 
+    font-family: "Emerald", serif;
+    font-size: 25px;
+    padding: 10px 40px;
+    border: none;
+    width: 175px;
+    height: 55px;
+    border-radius: 20px;
+    cursor: pointer;
     text-align: center;
+    display: inline-block;
+}
+
+.on{
+    margin: 1%;
 }
