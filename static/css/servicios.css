@@ -1,0 +1,67 @@
+@font-face{
+    font-family: 'Emerald';
+    src: url('Lost Emerald.otf') format(opentype);
+}
+
+body {
+    background-color: #497d83;
+    padding: 2% 10%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a p{
+    background-color: #e7f0e7;
+    color: #7cafb6; 
+    font-family: "Emerald", serif;
+    font-size: 30px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin: 20  px;
+}
+
+.lol{
+    margin: 2%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 655px;
+    height: 40px;
+    border-radius: 20px;
+    color: #7cafb6;
+    background-color: #e7f0e7;
+    font-size: 35px;
+}
+
+.ini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.ini div{
+    padding: 1%;
+}
+
+.cre{
+    font-family: "Emerald", serif;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 655px;
+    height: 400px;
+    border-radius: 20px;
+    color: #7cafb6;
+    background-color: #e7f0e7;
+    font-size: 75px;
+    text-align: center;
+}

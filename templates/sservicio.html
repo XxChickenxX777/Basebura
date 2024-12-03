@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/sservicio.css') }}">
+    <title>Solicitar Servicio</title>
+</head>
+<body>
+    <main>
+        <section class="ini">
+            <div class="lol">
+                <form action="/ss" method="post">
+                    <label for="email">Correo electrónico : </label>
+                    <input type="text" id="email" name="email" placeholder="Ingresa tu Correo" required>
+            </div>
+            <div class="lol">
+                <select name="tianguis" required>
+                    <option value="" disabled selected>Elija el tianguis que represente</option>
+                    <option value="Tianguis 1">Tianguis 1: ESQ. CALZ. DE LAS ARMAS NORTE</option>
+                    <option value="Tianguis 2">Tianguis 2: HERREROS, ENTRE CIBERNETICA Y GEOLOGIA</option>
+                    <option value="Tianguis 3">Tianguis 3: PLAZA ETIOPIA, SOBRE HERREROS</option>
+                    <option value="Tianguis 4">Tianguis 4: PLAZA PALOMARES, ENTRE HERREROS, PESCADORES Y MERCADERES</option>
+                    <option value="Tianguis 5">Tianguis 5: ALBAÑILES Y URANIO ENTRE HIDROGENO Y ARGON, CINCEL Y RENACIMIENTO.</option>
+                    <option value="Tianguis 6">Tianguis 6: ALBAÑILES, ESQ. ARGON</option>
+                    <option value="Tianguis 7">Tianguis 7: JACARANDAS Y ANDADOR DE JACARANDAS</option>
+                </select>
+            </div>
+            <div class="on">
+                <button type="submit">Enviar</button>
+            </div>
+            <div class="on">
+                <a href="{{ url_for('cuentas') }}"><p>Cancelar</p></a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
