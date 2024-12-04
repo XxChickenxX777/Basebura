@@ -78,6 +78,41 @@ def srepre():
     email = request.args.get("email", "contraseña")
     return render_template("srepre.html", email=email)
 
+@app.route("/Solicitar_Servicio")
+def solicitars():
+    return render_template("sservicio.html")
+
+@app.route("/ss", methods=["GET", "POST"])
+def solicitor():
+    if request.method == "POST":
+        email = request.form.get("email")
+        tianguis = request.form.get("tianguis")
+        print(email)
+        print(tianguis)
+        #procesar datos de entrada
+        return redirect(url_for("servicios", email= email, tianguis=tianguis))
+    return render_template("sservicio.html")
+
+@app.route("/Servicio_Solicitado")
+def servicios():
+    #obtener el parametro opcional
+    email = request.args.get("email")
+    tianguis = request.args.get("tianguis")
+    if tianguis == "Tianguis 1":
+        return render_template("servicios1.html", email=email, tianguis=tianguis)
+    if tianguis == "Tianguis 2":
+        return render_template("servicios2.html", email=email, tianguis=tianguis)
+    if tianguis == "Tianguis 3":
+        return render_template("servicios3.html", email=email, tianguis=tianguis)
+    if tianguis == "Tianguis 4":
+        return render_template("servicios4.html", email=email, tianguis=tianguis)
+    if tianguis == "Tianguis 5":
+        return render_template("servicios5.html", email=email, tianguis=tianguis)
+    if tianguis == "Tianguis 6":
+        return render_template("servicios6.html", email=email, tianguis=tianguis)
+    if tianguis == "Tianguis 7":
+        return render_template("servicios7.html", email=email, tianguis=tianguis)
+
 @app.route("/Mapa")
 def map():
     return render_template("maps.html")
