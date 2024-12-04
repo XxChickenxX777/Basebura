@@ -78,5 +78,9 @@ def srepre():
     email = request.args.get("email", "contraseña")
     return render_template("srepre.html", email=email)
 
+@app.route("/Mapa")
+def map():
+    return render_template("maps.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
